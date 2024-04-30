@@ -299,14 +299,15 @@ runOnce();
   const isPrivate = 23;
 })();
 
-// console.log(isPrivate);
+// console.log(isPrivate); // not defined
 
 // IIFE arrow function
 (() => console.log('This will ALSO never run again'))();
 
+// DATA PRIVACY
 {
   const isPrivate = 23;
   var notPrivate = 46;
 }
-// console.log(isPrivate);
-console.log(notPrivate);
+// console.log(isPrivate); // not defined
+console.log(notPrivate); // 46
